@@ -90,20 +90,100 @@
 		3BA817EB2B85F37F00C403DC /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
-				3BA817EC2B85F37F00C403DC /* AppDelegate.swift */,
+				3BB71D642B879CC4002B8468 /* Scene */,
+				3BB71D632B879CBB002B8468 /* Extensions */,
+				3BB71D622B879CB2002B8468 /* Model */,
+				3BB71D612B879CAC002B8468 /* Service */,
+				3BB71D602B879CA6002B8468 /* Manager */,
+				3BB71D5F2B879C9C002B8468 /* SupportingFiles */,
+			);
+			path = MovieApp;
+			sourceTree = "<group>";
+		};
+		3BB71D5F2B879C9C002B8468 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				3BA817EE2B85F37F00C403DC /* SceneDelegate.swift */,
-				3BA817F02B85F37F00C403DC /* LoginViewController.swift */,
-				3BA818122B85FC5D00C403DC /* RegisterViewController.swift */,
-				3BA818662B863C0900C403DC /* MainTabBarController.swift */,
-				3BA818142B85FE9B00C403DC /* HomeViewController.swift */,
-				3BA8186C2B863CAB00C403DC /* FavoritesViewController.swift */,
-				3BA8186E2B863CC300C403DC /* SettingsViewController.swift */,
+				3BA817EC2B85F37F00C403DC /* AppDelegate.swift */,
 				3BA817F52B85F38100C403DC /* Assets.xcassets */,
 				3BA817F72B85F38100C403DC /* LaunchScreen.storyboard */,
 				3BA817FA2B85F38100C403DC /* Info.plist */,
 				3BA8184F2B86199700C403DC /* GoogleService-Info.plist */,
 			);
-			path = MovieApp;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3BB71D602B879CA6002B8468 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3BB71D612B879CAC002B8468 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3BB71D622B879CB2002B8468 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BB71D632B879CBB002B8468 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3BB71D642B879CC4002B8468 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3BA818662B863C0900C403DC /* MainTabBarController.swift */,
+				3BB71D682B879D7F002B8468 /* Login */,
+				3BB71D672B879CF4002B8468 /* Settings */,
+				3BB71D662B879CEB002B8468 /* Favorites */,
+				3BB71D652B879CDD002B8468 /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		3BB71D652B879CDD002B8468 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3BA818142B85FE9B00C403DC /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3BB71D662B879CEB002B8468 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				3BA8186C2B863CAB00C403DC /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		3BB71D672B879CF4002B8468 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3BA8186E2B863CC300C403DC /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3BB71D682B879D7F002B8468 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3BA817F02B85F37F00C403DC /* LoginViewController.swift */,
+				3BA818122B85FC5D00C403DC /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,7 +428,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 93926563G8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MovieApp/Info.plist;
+				INFOPLIST_FILE = MovieApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -375,7 +455,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 93926563G8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MovieApp/Info.plist;
+				INFOPLIST_FILE = MovieApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
