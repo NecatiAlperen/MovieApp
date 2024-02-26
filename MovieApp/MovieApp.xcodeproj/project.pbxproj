@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B26C8CD2B8D1ADD00B13D3A /* CGFloat + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C8CC2B8D1ADD00B13D3A /* CGFloat + Ext.swift */; };
+		3B26C8CF2B8D1D4400B13D3A /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C8CE2B8D1D4400B13D3A /* MovieCollectionViewCell.swift */; };
+		3B26C8D22B8D224F00B13D3A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C8D12B8D224F00B13D3A /* HeaderView.swift */; };
+		3BA4E8C92B8D16DC007D84DC /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA4E8C82B8D16DC007D84DC /* CollectionViewTableViewCell.swift */; };
 		3BA817ED2B85F37F00C403DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA817EC2B85F37F00C403DC /* AppDelegate.swift */; };
 		3BA817EF2B85F37F00C403DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA817EE2B85F37F00C403DC /* SceneDelegate.swift */; };
 		3BA817F12B85F37F00C403DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA817F02B85F37F00C403DC /* LoginViewController.swift */; };
@@ -33,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B26C8CC2B8D1ADD00B13D3A /* CGFloat + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat + Ext.swift"; sourceTree = "<group>"; };
+		3B26C8CE2B8D1D4400B13D3A /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B26C8D12B8D224F00B13D3A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3BA4E8C82B8D16DC007D84DC /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		3BA817E92B85F37F00C403DC /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA817EC2B85F37F00C403DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BA817EE2B85F37F00C403DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B26C8D02B8D222400B13D3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B26C8D12B8D224F00B13D3A /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3BA4E8C72B8D169F007D84DC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3BA4E8C82B8D16DC007D84DC /* CollectionViewTableViewCell.swift */,
+				3B26C8CE2B8D1D4400B13D3A /* MovieCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		3BA817E02B85F37F00C403DC = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +162,7 @@
 		3BB71D632B879CBB002B8468 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3B26C8CC2B8D1ADD00B13D3A /* CGFloat + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -145,45 +171,47 @@
 			isa = PBXGroup;
 			children = (
 				3BA818662B863C0900C403DC /* MainTabBarController.swift */,
-				3BB71D682B879D7F002B8468 /* Login */,
-				3BB71D672B879CF4002B8468 /* Settings */,
-				3BB71D662B879CEB002B8468 /* Favorites */,
-				3BB71D652B879CDD002B8468 /* Home */,
+				3BB71D682B879D7F002B8468 /* LoginVC */,
+				3BB71D672B879CF4002B8468 /* SettingsVC */,
+				3BB71D662B879CEB002B8468 /* FavoritesVC */,
+				3BB71D652B879CDD002B8468 /* HomeVC */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
 		};
-		3BB71D652B879CDD002B8468 /* Home */ = {
+		3BB71D652B879CDD002B8468 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
 				3BA818142B85FE9B00C403DC /* HomeViewController.swift */,
+				3B26C8D02B8D222400B13D3A /* Views */,
+				3BA4E8C72B8D169F007D84DC /* Cells */,
 			);
-			path = Home;
+			path = HomeVC;
 			sourceTree = "<group>";
 		};
-		3BB71D662B879CEB002B8468 /* Favorites */ = {
+		3BB71D662B879CEB002B8468 /* FavoritesVC */ = {
 			isa = PBXGroup;
 			children = (
 				3BA8186C2B863CAB00C403DC /* FavoritesViewController.swift */,
 			);
-			path = Favorites;
+			path = FavoritesVC;
 			sourceTree = "<group>";
 		};
-		3BB71D672B879CF4002B8468 /* Settings */ = {
+		3BB71D672B879CF4002B8468 /* SettingsVC */ = {
 			isa = PBXGroup;
 			children = (
 				3BA8186E2B863CC300C403DC /* SettingsViewController.swift */,
 			);
-			path = Settings;
+			path = SettingsVC;
 			sourceTree = "<group>";
 		};
-		3BB71D682B879D7F002B8468 /* Login */ = {
+		3BB71D682B879D7F002B8468 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
 				3BA817F02B85F37F00C403DC /* LoginViewController.swift */,
 				3BA818122B85FC5D00C403DC /* RegisterViewController.swift */,
 			);
-			path = Login;
+			path = LoginVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,12 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B26C8CD2B8D1ADD00B13D3A /* CGFloat + Ext.swift in Sources */,
 				3BA818152B85FE9B00C403DC /* HomeViewController.swift in Sources */,
 				3BA817F12B85F37F00C403DC /* LoginViewController.swift in Sources */,
 				3BA8186D2B863CAB00C403DC /* FavoritesViewController.swift in Sources */,
 				3BA818672B863C0900C403DC /* MainTabBarController.swift in Sources */,
 				3BA817ED2B85F37F00C403DC /* AppDelegate.swift in Sources */,
+				3BA4E8C92B8D16DC007D84DC /* CollectionViewTableViewCell.swift in Sources */,
+				3B26C8D22B8D224F00B13D3A /* HeaderView.swift in Sources */,
 				3BA817EF2B85F37F00C403DC /* SceneDelegate.swift in Sources */,
+				3B26C8CF2B8D1D4400B13D3A /* MovieCollectionViewCell.swift in Sources */,
 				3BA818132B85FC5D00C403DC /* RegisterViewController.swift in Sources */,
 				3BA8186F2B863CC300C403DC /* SettingsViewController.swift in Sources */,
 			);
