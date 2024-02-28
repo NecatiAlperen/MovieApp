@@ -19,7 +19,7 @@ class MainTabBarController: UITabBarController {
     
     
     private func setupTabbar(){
-        let vcHome = UINavigationController(rootViewController:HomeViewController())
+        let vcHome = UINavigationController(rootViewController: MovieListBuilder.make())
         let vcFavorites = UINavigationController(rootViewController:FavoritesViewController())
         let vcSettings = UINavigationController(rootViewController:SettingsViewController())
         

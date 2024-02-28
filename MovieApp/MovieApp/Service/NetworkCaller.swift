@@ -13,7 +13,7 @@ protocol NetworkServiceProtocol {
 
 
 
-final class NetworkCaller {
+final class NetworkCaller : NetworkServiceProtocol {
     
     
     func fetchData<T: Decodable>(_ endPoint: Endpoint, completion: @escaping (Result<T,Error>) -> Void){
