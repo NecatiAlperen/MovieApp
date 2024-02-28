@@ -10,11 +10,14 @@ import SnapKit
 
 class HomeViewController: UIViewController {
     private var tableView = UITableView()
+    var viewModel : HomeViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         setupUI()
+        viewModel?.delegate = self
+        viewModel?.load()
     }
     
     
@@ -34,6 +37,11 @@ class HomeViewController: UIViewController {
     }
 
 }
+
+//extension HomeViewController : MovieListViewModelDelegate {
+//
+//}
+
 
 extension HomeViewController: UITableViewDelegate,UITableViewDataSource {
     
