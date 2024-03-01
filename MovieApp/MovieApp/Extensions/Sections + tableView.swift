@@ -11,4 +11,5 @@ enum SectionsTableView : Int {
     case popular = 0
     case topRated = 1
     case upComing = 2
+    case nowPlaying = 3
 }

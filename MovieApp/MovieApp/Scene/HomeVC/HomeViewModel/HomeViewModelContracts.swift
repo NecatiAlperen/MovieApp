@@ -17,6 +17,7 @@ enum MovieListViewModelOutput {
     case popular([MovieResult])
     case upComing([MovieResult])
     case topRated([MovieResult])
+    case nowPlaying([MovieResult])
     case error (Error)
 }
 

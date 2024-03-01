@@ -27,6 +27,7 @@ enum Endpoint {
     case popular
     case topRated
     case upComing
+    case nowPlaying
 }
 
 extension Endpoint: EndpointProtocol {
@@ -45,6 +46,8 @@ extension Endpoint: EndpointProtocol {
             return "top_rated"
         case.upComing:
             return "upcoming"
+        case .nowPlaying:
+            return "now_playing"
         }
     }
     
@@ -59,6 +62,8 @@ extension Endpoint: EndpointProtocol {
         case.topRated:
             return .get
         case.upComing:
+            return .get
+        case .nowPlaying:
             return .get
         }
     }

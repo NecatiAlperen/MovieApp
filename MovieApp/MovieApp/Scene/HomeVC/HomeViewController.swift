@@ -13,7 +13,8 @@ class HomeViewController: UIViewController {
     var arrPopular = [MovieResult]()
     var arrUpcoming = [MovieResult]()
     var arrToprated = [MovieResult]()
-    let sectionMovies : [String] = ["Popular","Upcoming Movies","Top Rated"]
+    var arrNowPlaying = [MovieResult]()
+    let sectionMovies : [String] = ["Popular","Upcoming Movies","Top Rated","Now Playing"]
     var viewModel : HomeViewModel?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +57,11 @@ extension HomeViewController: MovieListViewModelDelegate{
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
+        case .nowPlaying(let nowplaying):
+            self.arrNowPlaying = nowplaying
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         case .error(let error):
             print(error)
         }
@@ -85,6 +91,8 @@ extension HomeViewController :UITableViewDelegate,UITableViewDataSource {
             cell.configure(movies: arrToprated)
         case SectionsTableView.upComing.rawValue:
             cell.configure(movies: arrUpcoming)
+        case SectionsTableView.nowPlaying.rawValue:
+            cell.configure(movies: arrNowPlaying)
         default:
             break
         }

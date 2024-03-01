@@ -39,6 +39,14 @@ final class HomeViewModel:MovieListViewModelProtocol {
                 self.delegate?.handleOutput(.error(error))
             }
         }
+        service.fetchData(.nowPlaying) { (result: Result<Movie,Error>) in
+            switch result {
+            case .success(let movie):
+                self.delegate?.handleOutput(.nowPlaying(movie.results ?? []))
+            case .failure(let error):
+                self.delegate?.handleOutput(.error(error))
+            }
+        }
         
          
     }
